@@ -17,5 +17,6 @@ class Person {
 	String name
 	String surname
 	Address address
-
+	List<Person> children = []
+	List<FamilyCard> cards = []
 }
