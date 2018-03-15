@@ -56,8 +56,8 @@ class PersonServiceSpec extends Specification {
 			personService.addChild(person, childTwo)
 		then:
 			person.children.size() == 2
-			person.children*.surname.each {it == 'Smith'}
-			person.children.surname.each {it == 'Smith'}
+			person.children*.surname.every {it == 'Smith'}
+			person.children.surname.every {it == 'Smith'}
 	}
 
 	def "should not add family card when person has no children"() {
@@ -79,6 +79,7 @@ class PersonServiceSpec extends Specification {
 //			1 * policyProvider.canAddCardType(*_) >> true
 //			1 * policyProvider.canAddCardType(!null) >> true
 //			1 * policyProvider.canAddCardType(_ as int) >> true
+			0* _  // Nothin else happened
 			!person.cards
 	}
 
