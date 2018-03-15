@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/greach-2018-final.iml" filepath="$PROJECT_DIR$/.idea/modules/greach-2018-final.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/greach-2018-final_main.iml" filepath="$PROJECT_DIR$/.idea/modules/greach-2018-final_main.iml" group="greach-2018-final" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/greach-2018-final_test.iml" filepath="$PROJECT_DIR$/.idea/modules/greach-2018-final_test.iml" group="greach-2018-final" />
+    </modules>
+  </component>
+</project>
