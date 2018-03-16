@@ -22,7 +22,7 @@ class SimpleOpsSpec extends Specification {
 		when:
 			def lines = file.readLines()
 		then:
-			lines[0] != 'File Content'
+			lines[0] == 'File Content'
 	}
 
 

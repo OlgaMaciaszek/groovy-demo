@@ -1,0 +1,10 @@
+
+person('Maria').child('Jane')
+
+person Maria child 'Jane
+
+person { }
+
+
+add(1.child)
+add 1 child
