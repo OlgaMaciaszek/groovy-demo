@@ -1,0 +1,78 @@
+Benchmark                       (size)  Mode  Cnt       Score       Error  Units
+
+JavaLoops.forIterStatement       10000  avgt   10   55317.892 ±  3352.271  ns/op
+
+JavaLoops.forStatement           10000  avgt   10   56138.224 ±  4127.029  ns/op
+
+JavaLoops.foreachStatement       10000  avgt   10   71232.521 ±  3817.685  ns/op
+
+
+
+bez compile static - indy
+
+Benchmark                       (size)  Mode  Cnt       Score       Error  Units
+
+GroovyLoops.forIterStatement     10000  avgt   10  154657.507 ± 13847.192  ns/op
+
+GroovyLoops.forStatement         10000  avgt   10  213031.734 ±  6026.352  ns/op
+
+GroovyLoops.foreachStatement     10000  avgt   10   85664.857 ±  1001.653  ns/op
+
+GroovyLoops.groovyStyleCollect   10000  avgt   10  436513.862 ±  4541.482  ns/op
+
+GroovyLoops.groovyStyleEach      10000  avgt   10  397450.034 ±  5185.809  ns/op
+
+
+
+z compile static - indy
+
+Benchmark                       (size)  Mode  Cnt       Score       Error  Units
+
+GroovyLoops.forIterStatement     10000  avgt   10   60157.781 ±  3002.501  ns/op
+
+GroovyLoops.forStatement         10000  avgt   10   52615.760 ±  1354.141  ns/op
+
+GroovyLoops.foreachStatement     10000  avgt   10   74159.615 ±  7452.971  ns/op
+
+GroovyLoops.groovyStyleCollect   10000  avgt   10  495837.517 ± 30765.049  ns/op
+
+GroovyLoops.groovyStyleEach      10000  avgt   10   64556.833 ±  3564.037  ns/op
+
+
+
+z compile static + indy
+
+Benchmark                       (size)  Mode  Cnt       Score       Error  Units
+
+GroovyLoops.forIterStatement     10000  avgt   10   59713.669 ±  5259.762  ns/op
+
+GroovyLoops.forStatement         10000  avgt   10   53276.021 ±  2003.668  ns/op
+
+GroovyLoops.foreachStatement     10000  avgt   10   59188.050 ±  2416.378  ns/op
+
+GroovyLoops.groovyStyleCollect   10000  avgt   10  498762.587 ± 35037.253  ns/op
+
+GroovyLoops.groovyStyleEach      10000  avgt   10   68384.921 ±  5763.788  ns/op
+
+
+
+bez compile static + indy
+
+Benchmark                       (size)  Mode  Cnt       Score       Error  Units
+
+GroovyLoops.forIterStatement     10000  avgt   10  185917.310 ± 30084.557  ns/op
+
+GroovyLoops.forStatement         10000  avgt   10  216605.498 ± 17092.885  ns/op
+
+GroovyLoops.foreachStatement     10000  avgt   10   90452.071 ±  7247.835  ns/op
+
+GroovyLoops.groovyStyleCollect   10000  avgt   10  448610.849 ± 42127.115  ns/op
+
+GroovyLoops.groovyStyleEach      10000  avgt   10  450143.409 ± 37075.372  ns/op
+
+
+Benchmark             Mode  Cnt      Score      Error  Units
+
+GroovyJson.parseJson  avgt   10  14549.638 ± 1233.416  ns/op
+
+JavaJson.parseJson    avgt   10   7900.850 ±  338.430  ns/op

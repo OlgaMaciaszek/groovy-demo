@@ -11,7 +11,7 @@ public class GroovyScriptExecutor {
 	public void executeScript(String inputScript) {
 		Binding binding = new Binding();
 		GroovyShell shell = new GroovyShell(binding);
-		binding.setProperty("personHelper", new PersonHelper());
+		binding.setProperty("personRepository", new PersonRepository());
 		Script script = shell.parse(inputScript);
 		script.run();
 	}

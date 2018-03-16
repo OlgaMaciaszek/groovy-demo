@@ -1,0 +1,30 @@
+{
+  "address": null,
+  "cards": [],
+  "surname": "Smith",
+  "name": "Anna",
+  "children": [
+    {
+      "address": {
+        "postalCode": "00000",
+        "streetAddress": "58. Birch Street",
+        "city": "Shady Valley"
+      },
+      "cards": [],
+      "surname": "Smith",
+      "name": "Jane",
+      "children": []
+    },
+    {
+      "address": {
+        "postalCode": "00000",
+        "streetAddress": "58. Birch Street",
+        "city": "Shady Valley"
+      },
+      "cards": [],
+      "surname": "Smith",
+      "name": "Adam",
+      "children": []
+    }
+  ]
+}

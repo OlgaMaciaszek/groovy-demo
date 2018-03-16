@@ -56,7 +56,7 @@ class PersonServiceSpec extends Specification {
 			personService.addChild(person, childTwo)
 		then:
 			person.children.size() == 2
-			person.children*.surname.every {it == 'Smith'}
+			person.children*.surname.every {it == 'Smith'} // not: each{} !!!
 			person.children.surname.every {it == 'Smith'}
 	}
 
