@@ -9,7 +9,7 @@ import groovy.util.slurpersupport.GPathResult
 
 def text = '''
     <person>
-        <children>
+        <children>      
            <child id="1">
             <name>Jane</name>
             <surname>Smith</surname>
