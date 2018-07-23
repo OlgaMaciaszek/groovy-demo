@@ -79,7 +79,7 @@ class PersonServiceSpec extends Specification {
 //			1 * policyProvider.canAddCardType(*_) >> true
 //			1 * policyProvider.canAddCardType(!null) >> true
 //			1 * policyProvider.canAddCardType(_ as int) >> true
-			0* _  // Nothin else happened
+			0* _  // Nothing else happened
 			!person.cards
 	}
 
