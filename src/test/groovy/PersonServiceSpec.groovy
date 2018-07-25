@@ -84,9 +84,10 @@ class PersonServiceSpec extends Specification {
 	}
 
 	@Unroll
-	def "should add family card only when canAddCardType = #canAddCardType and canAddForNoChildren = #canAddForNoChildren"() {
+	def "should add family card only when canAddCardType = #canAddCardType and canAddForNoChildren = #canAddForNoChildren = #added"() {
 		given:
 			policyProvider.canAddCardType(1) >> canAddCardType
+			// policyProvider.canAddCardType(1) >> canAddCardType.call() --> you can use closures in data driven tests
 			policyProvider.canGiveFamilyCardForPersonWithNoChildren() >> canAddForNoChildren
 		when:
 			personService.addFamilyCard(person, 1)
@@ -98,6 +99,7 @@ class PersonServiceSpec extends Specification {
 			false          | true                | 0
 			false          | false               | 0
 			true           | true                | 1
+			//	{doSomething}| {doSomethingElse} | 0
 	}
 
 	@Unroll

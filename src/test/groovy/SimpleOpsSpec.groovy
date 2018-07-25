@@ -12,7 +12,7 @@ class SimpleOpsSpec extends Specification {
 
 	def "should get from URL"() {
 		expect:
-			'http://2018.greachconf.com/'.toURL().text.contains('THE GROOVY SPANISH CONFERENCE')
+			'https://gr8conf.us/'.toURL().text.contains('Welcome to GR8Conf US')
 	}
 
 	def "should create files"() {
