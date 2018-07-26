@@ -1,6 +1,6 @@
 
 person('Maria').child('Jane')
 
-person Maria child 'Jane
+person 'Maria' child 'Jane'
 
 person { }
